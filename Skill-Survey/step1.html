@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Skill Survey Step 1</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <link rel="stylesheet" href="./css/jquery-ui.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script src="./js/jquery-1.12.4.js"></script>
+        <script src="./js/jquery-ui.js"></script>
+        <script>
+            $( function() {
+
+                var dragOptions = {
+                    revert: "invalid",
+                    scope: "items",
+                    helper: "clone"
+                };
+
+                $( "#draggable1" ).draggable(dragOptions);
+                $( "#draggable2" ).draggable(dragOptions);
+                $( "#draggable3" ).draggable(dragOptions);
+                $( "#draggable4" ).draggable(dragOptions);
+                $( "#draggable5" ).draggable(dragOptions);
+                $( "#draggable6" ).draggable(dragOptions);
+                $( "#draggable7" ).draggable(dragOptions);
+                $( "#draggable8" ).draggable(dragOptions);
+                $( "#draggable9" ).draggable(dragOptions);
+                $( "#draggable10" ).draggable(dragOptions);
+                $( "#draggable11" ).draggable(dragOptions);
+                $( "#draggable12" ).draggable(dragOptions);
+                $( "#draggable13" ).draggable(dragOptions);
+                $( "#draggable14" ).draggable(dragOptions);
+                $( "#draggable15" ).draggable(dragOptions);
+                $( "#draggable16" ).draggable(dragOptions);
+                $( "#draggable17" ).draggable(dragOptions);
+                $( "#draggable18" ).draggable(dragOptions);
+                $( "#draggable19" ).draggable(dragOptions);
+                $( "#draggable20" ).draggable(dragOptions);
+                $( "#draggable21" ).draggable(dragOptions);
+                $( "#draggable22" ).draggable(dragOptions);
+                $( "#draggable23" ).draggable(dragOptions);
+                $( "#draggable24" ).draggable(dragOptions);
+                $( "#draggable25" ).draggable(dragOptions);
+                $( "#draggable26" ).draggable(dragOptions);
+                $( "#draggable27" ).draggable(dragOptions);
+                $( "#draggable28" ).draggable(dragOptions);
+                $( "#draggable29" ).draggable(dragOptions);
+                $( "#draggable30" ).draggable(dragOptions);
+
+                $( "#droppable1, #droppable2, #droppable3, #droppable4, #droppable5, #valuesDiv" ).droppable({
+                    scope: "items",
+                    over: function( event, ui ) {
+                        var count = 0;
+                        if ($(this).is("#droppable1"))
+                            count = $("#droppable1").children("div").size() - 1;
+                            if(count >= 4)
+                                $("#droppable1").droppable({ disabled: true });
+                            else
+                                $("#droppable1").droppable({ disabled: false});
+
+                        if ($(this).is("#droppable2"))
+                            count = $("#droppable2").children("div").size() - 1;
+                            if(count >= 6)
+                                $("#droppable2").droppable({ disabled: true });
+                            else
+                                $("#droppable2").droppable({ disabled: false});
+
+                        if ($(this).is("#droppable3"))
+                            count = $("#droppable3").children("div").size() - 1;
+                            if(count >= 10)
+                                $("#droppable3").droppable({ disabled: true });
+                            else
+                                $("#droppable3").droppable({ disabled: false});
+
+                        if ($(this).is("#droppable4"))
+                            count = $("#droppable4").children("div").size() - 1;
+                            if(count >= 6)
+                                $("#droppable4").droppable({ disabled: true });
+                            else
+                                $("#droppable4").droppable({ disabled: false});
+
+                        if ($(this).is("#droppable5"))
+                            count = $("#droppable5").children("div").size() - 1;
+                            if(count >= 4)
+                                $("#droppable5").droppable({ disabled: true });
+                            else
+                                $("#droppable5").droppable({ disabled: false});
+                    },
+                    drop: function( event, ui ) {
+                        var $drop = $(this);
+                        $(ui.draggable).draggable({}).appendTo($drop);
+                    }
+                });
+
+                $('#notDroppable').droppable();                    
+
+            } );
+        </script>        
+    </head>
+    <body>
+<div id="notDroppable">
+
+        <div class="navDiv">
+                <a href="index.html"><--- Intro</a>
+                <a href="results.html">Finish ---></a>
+        </div>
+        <br />
+
+        <div class="introDiv">
+            Intro text goes here. Tell user what to expect on this page....
+        </div>
+        <br />
+
+        <table>
+            <tr>
+                <td style="vertical-align: top;">
+                    <div id="valuesDiv" style="width: 250px; border: 1px solid grey;">
+                        <div id="draggable1" class="ui-widget-content">Accuracy</div>
+                        <div id="draggable2" class="ui-widget-content">Achievement</div>
+                        <div id="draggable3" class="ui-widget-content">Balance</div>
+                        <div id="draggable4" class="ui-widget-content">Certainty</div>
+                        <div id="draggable5" class="ui-widget-content">Challenge</div>
+                        <div id="draggable6" class="ui-widget-content">Communication</div>
+                        <div id="draggable7" class="ui-widget-content">Compassion</div>
+                        <div id="draggable8" class="ui-widget-content">Connection</div>
+                        <div id="draggable9" class="ui-widget-content">Creativity</div>
+                        <div id="draggable10" class="ui-widget-content">Efficiency</div>
+                        <div id="draggable11" class="ui-widget-content">Family</div>
+                        <div id="draggable12" class="ui-widget-content">Giving</div>
+                        <div id="draggable13" class="ui-widget-content">Hard work</div>
+                        <div id="draggable14" class="ui-widget-content">Independence</div>
+                        <div id="draggable15" class="ui-widget-content">Innovation</div>
+                        <div id="draggable16" class="ui-widget-content">Leadership</div>
+                        <div id="draggable17" class="ui-widget-content">Learning</div>
+                        <div id="draggable18" class="ui-widget-content">Logic</div>
+                        <div id="draggable19" class="ui-widget-content">Organization</div>
+                        <div id="draggable20" class="ui-widget-content">Potential</div>
+                        <div id="draggable21" class="ui-widget-content">Recognition</div>
+                        <div id="draggable22" class="ui-widget-content">Respect</div>
+                        <div id="draggable23" class="ui-widget-content">Service</div>
+                        <div id="draggable24" class="ui-widget-content">Simplicity</div>
+                        <div id="draggable25" class="ui-widget-content">Stability</div>
+                        <div id="draggable26" class="ui-widget-content">Structure</div>
+                        <div id="draggable27" class="ui-widget-content">Success</div>
+                        <div id="draggable28" class="ui-widget-content">Support</div>
+                        <div id="draggable29" class="ui-widget-content">Teamwork</div>
+                        <div id="draggable30" class="ui-widget-content">Wealth</div>
+                    </div>
+                
+                </td>
+                <td style="vertical-align: top; padding-left: 20px;">
+                        <div id="sortedDiv">
+
+                                <div id="droppable1" style="width: 250px; min-height: 100px; border: 1px solid blue; margin-bottom: 10px;" class="ui-widget-header">
+                                    <div style="border: 1px solid gray; background-color: lightgrey; height: 25px;">
+                                            Least Important (Must contain 4)</div>                      
+                                    <p></p>
+                                </div>
+                    
+                                <div id="droppable2" style="width: 250px; min-height: 100px; border: 1px solid blue;margin-bottom: 10px;" class="ui-widget-header">
+                                        <div style="border: 1px solid gray; background-color: lightgrey; height: 25px; ">
+                                                Less Important (Must contain 6)</div>                      
+                                        <p></p>
+                                </div>
+                        
+                                <div id="droppable3" style="width: 250px; min-height: 100px; border: 1px solid blue;margin-bottom: 10px;" class="ui-widget-header">
+                                        <div style="border: 1px solid gray; background-color: lightgrey; height: 25px; ">
+                                                Neutral (Must contain 10)</div>                      
+                                        <p></p>
+                                </div>
+                        
+                                <div id="droppable4" style="width: 250px; min-height: 100px; border: 1px solid blue;margin-bottom: 10px;" class="ui-widget-header"> 
+                                        <div style="border: 1px solid gray; background-color: lightgrey; height: 25px; ">
+                                                Very Important (Must contain 6)</div>                      
+                                        <p></p>
+                                </div>           
+                                
+                                <div id="droppable5" style="width: 250px; min-height: 100px; border: 1px solid blue;margin-bottom: 10px;" class="ui-widget-header"> 
+                                        <div style="border: 1px solid gray; background-color: lightgrey; height: 25px; ">
+                                                Most Important (Must contain 4)</div>                      
+                                        <p></p>
+                                </div>            
+                            </div>
+                    
+                </td>
+            </tr>
+        </table>
+    </div> 
+    </body>
+</html>

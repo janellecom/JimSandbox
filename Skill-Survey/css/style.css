@@ -1,0 +1,9 @@
+#draggable { width: 100px; height: 30px; padding: 0.5em; float: left; margin: 3px 3px 3px 0; }
+#droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }        
+
+.valueItem
+{
+    text-align:center;
+    border:1px solid gray;
+    background-color: beige;
+}
